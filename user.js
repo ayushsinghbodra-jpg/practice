@@ -21,7 +21,7 @@ const userRequestHandler=(req,res)=>{
     <input type="radio" id="male" name="gender" value="male"/>
     <label for = "female">Female</label>
     <input type="radio" id="female" name="gender" value="female"/>
-    <input type="Submit" value="Sum"/>
+    <input type="Submit" value="Submit"/>
     </form>
 </body>
 </html>`);
@@ -49,7 +49,7 @@ const userRequestHandler=(req,res)=>{
                 return res.end();
             });
         });
-            return;
+        return;
     }
     res.setHeader('Content-Type','text/html');
     res.write(`

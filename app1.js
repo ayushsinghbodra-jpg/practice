@@ -4,7 +4,7 @@ const requestHandler=require('./user');
 
 const server = http.createServer (requestHandler);
 
-const PORT=3000;
+const PORT=3003;
 server.listen(PORT,() =>{
     console.log(`Server running aat http://localhost:${PORT}`)
 });

@@ -1,0 +1,24 @@
+{
+  "name": "npm-test",
+  "version": "1.0.0",
+  "description": "just having fun",
+  "homepage": "https://github.com/ayushsinghbodra-jpg/practice#readme",
+  "bugs": {
+    "url": "https://github.com/ayushsinghbodra-jpg/practice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushsinghbodra-jpg/practice.git"
+  },
+  "license": "ISC",
+  "author": "Ayush",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app1.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
