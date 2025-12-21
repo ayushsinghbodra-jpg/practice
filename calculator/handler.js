@@ -1,3 +1,6 @@
+const { sumRequestHandler } = require("./sum");
+
+
 const requestHandler = (req, res) => {
   console.log(req.url, req.method);
 
@@ -41,6 +44,11 @@ else if(req.url.toLowerCase()==="/calculator"){
 </html>`);
    return res.end();
   }
+
+  else if(req.url.toLowerCase()==="/calculate-result"&& req.method==="POST"){
+    return sumRequestHandler(req,res);
+  }
+
 
   //ROUTE 3 TO THE EROR MSG
 
