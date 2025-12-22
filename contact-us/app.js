@@ -36,10 +36,10 @@ app.get("/contact-us",(req,res,next)=>{
 app.post("/contact-us",(req,res,next)=>{
     console.log("Handling the contact POST request in the server" ,req.url,req.method);
     res.send("<h1>We will contact you very soon</h1>");
-})
+});
 
 const PORT =3000;
 
 app.listen(PORT,()=>{
     console.log(`Server is running jon the addreess http://localhost:${PORT}`);
-})
+});
