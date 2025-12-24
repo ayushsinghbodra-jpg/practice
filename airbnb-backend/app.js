@@ -21,7 +21,7 @@ app.use((req,res,next)=>{
 });
 
 app.use(express.urlencoded());
-app.use("/user",userRouter);
+app.use("/",userRouter);
 app.use("/host",hostRouter);
  
 app.use((req,res,next)=>{

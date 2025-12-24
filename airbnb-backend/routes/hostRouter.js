@@ -13,7 +13,7 @@ const registerHomes=[];
 
 hostRouter.post("/add-home",(req,res,next)=>{
     console.log(req.body);
-    registerHomes.push({Housename : req.body.Housename})
+    registerHomes.push({Housename : req.body.Housename,Price : req.body.Price,Location : req.body.Location,Rating:req.body.Rating,HouseImage:req.body.HouseImage})
     res.sendFile(path.join(rootDir,"views","homeAdded.html"));
 });
 
