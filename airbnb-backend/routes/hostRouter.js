@@ -3,19 +3,10 @@ const path = require ("path");
 const express = require("express");
 
 const hostRouter=express.Router();
-const rootDir=require("../utils/pathUtil");
+const HomeController=require ("../controller/home")
 
-hostRouter.get("/add-home",(req,res,next)=>{
-    res.sendFile(path.join(rootDir,"views","addHome.html"));
-});
+hostRouter.get("/add-home",HomeController.getAddHome);
 
-const registerHomes=[];
-
-hostRouter.post("/add-home",(req,res,next)=>{
-    console.log(req.body);
-    registerHomes.push({Housename : req.body.Housename,Price : req.body.Price,Location : req.body.Location,Rating:req.body.Rating,HouseImage:req.body.HouseImage})
-    res.sendFile(path.join(rootDir,"views","homeAdded.html"));
-});
+hostRouter.post("/add-home",HomeController.postAddedHome);
 
 exports.hostRouter=hostRouter;
-exports.registerHomes=registerHomes;

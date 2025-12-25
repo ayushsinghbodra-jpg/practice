@@ -5,13 +5,9 @@ const path= require ("path");
 const express = require("express");
 
 //LOCAL MODULES
-const rootDir=require("../utils/pathUtil")
-const {registerHomes}=require("./hostRouter");
+const HomeController=require("../controller/home");
 
 const userRouter=express.Router();
-userRouter.get("/",(req,res,next)=>{
-    console.log(registerHomes);
-    res.render('home',{registerHomes:registerHomes,pagetitle:'airbnb Home'});
-});
+userRouter.get("/",HomeController.getHome);
 
 module.exports=userRouter;
