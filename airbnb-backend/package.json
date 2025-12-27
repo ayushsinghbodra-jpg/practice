@@ -23,9 +23,13 @@
   },
   "dependencies": {
     "body-parser": "^2.2.1",
+    "connect-mongodb-session": "^5.0.0",
     "ejs": "^3.1.10",
     "express": "^5.2.1",
+    "express-session": "^1.18.2",
+    "express-validator": "^7.3.1",
     "mongodb": "^7.0.0",
+    "mongoose": "^9.0.2",
     "mysql2": "^3.16.0"
   }
 }
